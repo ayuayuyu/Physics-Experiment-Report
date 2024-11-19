@@ -2,6 +2,7 @@
 #let p = "Hiragino Kaku Gothic ProN"
 
 #let report(
+  t: "Tx",
   title: "タイトル",
   senkou: "専攻",
   group: "班",
@@ -29,13 +30,13 @@
   set page(
     footer: [
       // #align(center)[#counter(page).display("1")]
-      #context[ #counter(page).display("1") ]
+      #align(center)[ #counter(page).display("1") ]
     ]
   )
 
   v(10pt)
   align(center)[
-    #text(20pt, weight: 500, font: sans)[#title]
+    #text(20pt, weight: 500, font: sans)[#t#h(10pt)#title]
   ]
   v(10pt)
   align(right)[

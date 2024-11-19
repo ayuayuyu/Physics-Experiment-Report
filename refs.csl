@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" demote-non-dropping-particle="sort-only">
+    <info>
+        <title>IPSJ</title>
+        <id>https://csl.mendeley.com/styles/777678071/ipsj</id>
+        <summary>IPSJ style as per the 2024 guidelines, V 10.26.2024.</summary>
+        <updated>2024-10-26T01:44:37+00:00</updated>
+        <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under
+            a Creative Commons Attribution-ShareAlike 3.0 License</rights>
+    </info>
+    <locale xml:lang="ja">
+        <date form="text">
+            <date-part name="month" form="short" suffix=" " />
+            <date-part name="day" form="numeric-leading-zeros" suffix=", " />
+            <date-part name="year" />
+        </date>
+        <terms>
+            <term name="chapter" form="short">ch.</term>
+            <term name="chapter-number" form="short">ch.</term>
+            <term name="presented at">presented at the</term>
+            <term name="available at">available</term>
+        </terms>
+    </locale>
+    <macro name="author">
+        <names variable="author">
+            <name and="text" et-al-min="1" et-al-use-first="1" initialize-with=". " />
+            <label form="short" text-case="capitalize-first" prefix=", " />
+        </names>
+    </macro>
+    <macro name="date">
+        <date delimiter="/" variable="issued" prefix="閲覧日 ">
+            <date-part name="year" />
+            <date-part name="month" form="numeric" />
+            <date-part name="day" />
+        </date>
+    </macro>
+    <citation>
+        <sort>
+            <key variable="citation-number" />
+        </sort>
+        <layout delimiter=", ">
+            <group prefix="[" suffix="]" delimiter=", ">
+                <text variable="citation-number" />
+            </group>
+        </layout>
+    </citation>
+    <bibliography entry-spacing="0" second-field-align="flush">
+        <layout suffix=".">
+            <text variable="citation-number" prefix="[" suffix="]" />
+            <text macro="author" />
+            <text variable="title" prefix="「" suffix="」" />
+            <text variable="container-title" />
+            <text macro="page" />
+            <text variable="year-suffix" />
+            <text variable="URL" prefix="&#13;" suffix=" " />
+            <text macro="date" />
+        </layout>
+    </bibliography>
+</style>
