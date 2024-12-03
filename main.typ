@@ -7,8 +7,8 @@
   title: "真空蒸着法による薄膜の作製と膜厚の測定", 
   senkou: "k",
   group: "39",
-  student-id: "k23099",
-  author: "花田歩夢",
+  student-id: "学籍番号",
+  author: "名前",
   date: "11/8",
   paper-size: "a4", 
 )
